@@ -3,14 +3,26 @@
   window.daiFinalScriptLoaded = true;
 
   const fastSpeed = 100;
-  // Lưu trữ các hàm gốc của setTimeout và setInterval
-  const originalSetTimeout = window.setTimeout;
-  const originalSetInterval = window.setInterval;
+  const oSetTimeout = window.setTimeout;
+  const oSetInterval = window.setInterval;
 
   const speedHack = () => {
-    window.setTimeout = (fn, ms) => originalSetTimeout(fn, ms / fastSpeed);
-    window.setInterval = (fn, ms) => originalSetInterval(fn, ms / fastSpeed);
+    window.setTimeout = (fn, ms) => oSetTimeout(fn, ms / fastSpeed);
+    window.setInterval = (fn, ms) => oSetInterval(fn, ms / fastSpeed);
   };
+
+  if (currentUrl.startsWith("https://yeumoney.com/") || currentUrl.startsWith("http://yeumoney.com/")) {
+    // Nếu là yeumoney.com, đợi sự kiện DOMContentLoaded
+    document.addEventListener("DOMContentLoaded", () => {
+      speedHack();
+      originalSetInterval(speedHack, 100); // Sử dụng originalSetInterval
+      waitForBody(); // Gọi waitForBody để hiển thị popup sau khi body có
+    });
+  } else {
+    // Đối với các trang khác, chạy ngay lập tức như code gốc của bạn
+    speedHack();
+  oSetInterval(speedHack, 100);
+
 
   function showPopup() {
     if (document.getElementById("dai-popup")) return;
@@ -54,33 +66,20 @@
     `;
     popup.querySelector(".close").onclick = () => {
       popup.classList.remove("visible");
-      originalSetTimeout(() => popup.remove(), 600); // Sử dụng originalSetTimeout
+      oSetTimeout(() => popup.remove(), 600);
       css.remove();
     };
 
     document.head.appendChild(css);
     document.body.appendChild(popup);
-    originalSetTimeout(() => popup.classList.add("visible"), 100); // Sử dụng originalSetTimeout
-    // Thêm dòng này để popup tự động đóng sau 15 giây, nếu bạn muốn giữ tính năng này
-    originalSetTimeout(() => popup.querySelector(".close").click(), 15000); // Sử dụng originalSetTimeout
+    oSetTimeout(() => popup.classList.add("visible"), 100);
 
   }
 
-  // Lấy đường dẫn URL hiện tại
-  const currentUrl = window.location.href;
-
-  // Kiểm tra nếu là trang yeumoney.com
-  if (currentUrl.startsWith("https://yeumoney.com/") || currentUrl.startsWith("http://yeumoney.com/")) {
-    // Nếu là yeumoney.com, đợi sự kiện DOMContentLoaded
-    document.addEventListener("DOMContentLoaded", () => {
-      speedHack();
-      originalSetInterval(speedHack, 100); // Sử dụng originalSetInterval
-      waitForBody(); // Gọi waitForBody để hiển thị popup sau khi body có
-    });
-  } else {
-    // Đối với các trang khác, chạy ngay lập tức như code gốc của bạn
-    speedHack();
-    originalSetInterval(speedHack, 100); // Sử dụng originalSetInterval
-    waitForBody(); // Gọi waitForBody để hiển thị popup
+  function waitForBody() {
+    if (document.body) showPopup();
+    else oSetTimeout(waitForBody, 100);
   }
+
+  waitForBody();
 })();
