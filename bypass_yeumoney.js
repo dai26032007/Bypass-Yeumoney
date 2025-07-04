@@ -11,16 +11,7 @@
     window.setInterval = (fn, ms) => oSetInterval(fn, ms / fastSpeed);
   };
 
-  if (currentUrl.startsWith("https://yeumoney.com/") || currentUrl.startsWith("http://yeumoney.com/")) {
-    // Nếu là yeumoney.com, đợi sự kiện DOMContentLoaded
-    document.addEventListener("DOMContentLoaded", () => {
-      speedHack();
-      originalSetInterval(speedHack, 100); // Sử dụng originalSetInterval
-      waitForBody(); // Gọi waitForBody để hiển thị popup sau khi body có
-    });
-  } else {
-    // Đối với các trang khác, chạy ngay lập tức như code gốc của bạn
-    speedHack();
+  speedHack();
   oSetInterval(speedHack, 100);
 
 
