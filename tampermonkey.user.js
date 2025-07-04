@@ -8,10 +8,12 @@
 // @match        https://yeumoney.com/*
 // @match        *//*w88*/*
 // @match        *//*m88*/*
-// @match        *//*188bet*/*
+// @match        *//*88bet*/*
+// @match        *//*250*/*
 // @match        *//*bk8*/*
 // @match        *//*vn88*/*
 // @match        *//*fb88*/*
+
 // @exclude        https://yeumoney.com/quangly/check*
 // @grant        none
 // @icon         https://i.imgur.com/0l2I5mB.jpeg
