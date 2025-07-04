@@ -9,6 +9,7 @@
 // @match        *//*w88*/*
 // @match        *//*m88*/*
 // @match        *//*88bet*/*
+// @match        *//*bet88*/*
 // @match        *//*250*/*
 // @match        *//*bk8*/*
 // @match        *//*vn88*/*
