@@ -19,5 +19,5 @@ Link cho mọi người test thử : [https://yeumoney.com/BTuq0oO](https://yeum
 Lưu ý: Gặp lỗi thì comment vào github để fix. Vui lòng ghi Credit nếu có sử dụng code!
 
 
-## ©Copyright 2025 by [Đại](https://t.me/dai26032007)
+## [©Copyright 2025 by Đại](https://t.me/dai26032007)
 
