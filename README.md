@@ -1,17 +1,13 @@
 
 # Bypass Yeumoney
 
-Bypass Yeumoney - Công cụ tăng tốc độ đếm giây, giảm thời gian đợi lấy mã xuống chỉ còn 1s
+Bypass Yeumoney - Công cụ hỗ trợ vượt link không cần chạm tay, gặp lỗi cũng tự động khác phục
 
 
 ## Hướng dẫn cài đặt
 
-### Bước 1: Tải Tampermonkey
-Chọn link tải phù hợp và cài đặt
-
-PC: [Download](https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
-
-Android: [Download](https://chromewebstore.google.com/detail/tampermonkey-legacy/lcmhijbkigalmkeommnijlpobloojgfn)
+### Bước 1: Cài đặt extensions Tampermonkey
+Với điện thoại chrome không hỗ trợ extensions thì có thể sử dụng các trình duyệt hỗ trợ như Firefox, Quetta,...
 ### Bước 2: Cài đặt Bypass
 Sau khi tải Tampermonkey bấm vào đây để tự động cài đặt: [Install Bypass](https://github.com/dai26032007/bypass-yeumoney/raw/main/tampermonkey.user.js)
 
