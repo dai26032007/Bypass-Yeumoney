@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Bypass Yeumoney (Đại)
 // @namespace    http://tampermonkey.net/
-// @version      14/07/2025
+// @version      14.07.25
 // @description  Auto vượt yeumoney không cần chạm tay
 // @author       Nguyễn Bá Đại
 // @require      https://raw.githubusercontent.com/dai26032007/Bypass-yeumoney/refs/heads/main/bypass_yeumoney.js
