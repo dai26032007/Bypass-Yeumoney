@@ -1,12 +1,14 @@
 // ==UserScript==
 // @name         Bypass Yeumoney (Đại)
 // @namespace    http://tampermonkey.net/
-// @version      14.07.25
+// @version      10/07/2025
 // @description  Auto vượt yeumoney không cần chạm tay
 // @author       Nguyễn Bá Đại
-// @require      https://raw.githubusercontent.com/dai26032007/Bypass-yeumoney/refs/heads/main/bypass_yeumoney.js
+// @require      https://raw.githubusercontent.com/dai26032007/Bypass-yeumony/refs/heads/main/bypass_yeumoney.js
 // @match        https://yeumoney.com/*
 // @exclude      https://yeumoney.com/quangly/*
 // @grant        GM_xmlhttpRequest
-// @icon         https://i.imgur.com/0l2I5mB.jpeg
+// @grant        GM_setValue
+// @grant        GM_getValue
+// @icon         https://i.imgur.com/a7HCsJr.jpeg
 // ==/UserScript==
