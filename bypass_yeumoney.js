@@ -31,6 +31,15 @@
   const decryptedBytes = rc4Bytes(key, rawBytes);
   const decoded = new TextDecoder("utf-8").decode(new Uint8Array(decryptedBytes));
 
-  // ⚠️ Truyền GM_xmlhttpRequest vào để dùng được sau mã hóa
-  (new Function("GM_xmlhttpRequest", decoded))(GM_xmlhttpRequest);
+  // ✅ Truyền tất cả API Tampermonkey cần thiết vào đây
+  (new Function(
+    "GM_xmlhttpRequest", 
+    "GM_setValue", 
+    "GM_getValue", 
+    decoded
+  ))(
+    GM_xmlhttpRequest, 
+    GM_setValue, 
+    GM_getValue
+  );
 })();
