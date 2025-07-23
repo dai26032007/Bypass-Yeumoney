@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Bypass Yeumoney (Đại)
-// @namespace    http://bypassyeumoney.nbd.2603
+// @namespace    dai26032007.bpymn
 // @version      NBĐ-0002
 // @description  Auto vượt yeumoney không cần chạm tay
 // @author       Nguyễn Bá Đại
