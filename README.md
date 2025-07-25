@@ -14,9 +14,11 @@ Sau khi tải Tampermonkey bấm vào đây để tự động cài đặt: [Ins
 Sau khi cài xong thì thử vượt Yeumoney và trải nghiệm!
 
 > [!WARNING]
-> ✨ Kênh Thông Báo Chính Thức: [Bypass Yeumoney (Đại)](https://t.me/bypassyeumoney)
-> 💬 Nhóm Chat Chính Thức: [Dự án Bypass Yeumoney](https://t.me/bypassyeumoneychat)
-> 🚨 LƯU Ý QUAN TRỌNG: Hãy luôn kiểm tra kỹ đường link để đảm bảo bạn tham gia đúng kênh và nhóm chính thức, tránh các thông tin giả mạo!
+    ✨ Kênh Thông Báo Chính Thức: [Bypass Yeumoney (Đại)](https://t.me/bypassyeumoney)
+
+    💬 Nhóm Chat Chính Thức: [Dự án Bypass Yeumoney](https://t.me/bypassyeumoneychat)
+    
+    🚨 LƯU Ý QUAN TRỌNG: Hãy luôn kiểm tra kỹ đường link để đảm bảo bạn tham gia đúng kênh và nhóm chính thức, tránh các thông tin giả mạo!
 
 
 # [©Copyright 2025 by Đại](https://t.me/dai26032007)
